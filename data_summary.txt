@@ -1,0 +1,2080 @@
+====================================================================================================
+COBBLE EARLY WARNING SYSTEM - SMART DATA SUMMARY
+====================================================================================================
+
+====================================================================================================
+FILE 1/9: ELONGATION COBBLE 26112024.parquet
+Size: 214.6 MB
+====================================================================================================
+Rows: 300,000
+Columns: 10646
+Row Groups: 1
+
+--- COLUMN CATEGORIES ---
+  time                     :   102 columns
+  cobble_alarm_fault       :   484 columns
+  force_torque             :   298 columns
+  speed                    :   262 columns
+  temperature              :   540 columns
+  current_power            :   317 columns
+  looper                   :   240 columns
+  roll                     :   264 columns
+  vibration                :    10 columns
+  position_gap             :   111 columns
+  pressure                 :     7 columns
+  tracking                 :    89 columns
+  other_bool               :  6608 columns
+  other_numeric            :  1314 columns
+
+--- COBBLE/ALARM/FAULT COLUMNS (CRITICAL) ---
+  [1:0]STD01 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:1]STD01 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:2]STD02 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:3]STD02 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:4]STD03 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:5]STD03 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:6]STD04 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:7]STD04 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:8]STD05 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:9]STD05 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:10]STD06 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:11]STD06 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:12]STD07 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:13]STD07 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:14]STD08 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:15]STD08 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:16]STD09 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:17]STD09 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:18]STD10 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:19]STD10 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:20]STD11 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:21]STD11 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:22]STD12 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:23]STD12 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:24]STD13 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:25]STD13 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:26]STD14 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:27]STD14 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:28]STD15 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:29]STD15 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:30]STD16 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:31]STD16 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:32]STD17 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:33]STD17 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:34]STD18 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:35]STD18 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:36]STD19 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:37]STD19 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:38]STD20 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:39]STD20 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:44]SH001 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:45]SH001 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:46]SH002 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:47]SH002 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:48]SH003 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:49]SH003 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:50]PR003 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:51]PR003 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 300,000 (100.00%)
+  [1:143]STD01 B1 WARNING CUMULATIVE ALARM STATUS
+    dtype: float32
+    127.0: 300,000 (100.00%)
+  [1:144]STD02 B1 WARNING CUMULATIVE ALARM STATUS
+    dtype: float32
+    127.0: 300,000 (100.00%)
+
+--- TIME COLUMNS ---
+  [2_614]DB_UW10_AUX_DESCA_DESCALER_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+  [6_141]BC10_DB_CGRID_MANAG_ALARMS_FLD_PUSH_FW_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+  [6_142]BC10_DB_CGRID_MANAG_ALARMS_FLD_PUSH_BW_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+  [6_144]BC10_DB_CGRID_MANAG_ALARMS_FLD_LVR_LIFT_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+  [6_145]BC10_DB_CGRID_MANAG_ALARMS_FLD_LVR_LOW_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+
+--- SPEED COLUMNS (first 10) ---
+                                                  count         mean       std          min          25%          50%          75%          max
+[2:128]PLC01_HMI_STATUS_UW10_CALC_P1_FBKSpeed  300000.0  1349.309814  0.085196  1349.307617  1349.307617  1349.307617  1349.307617  1353.857910
+[2:132]PLC01_HMI_STATUS_UW10_CALC_P2_FBKSpeed  300000.0     0.000000  0.000000     0.000000     0.000000     0.000000     0.000000     0.000000
+[2:136]PLC01_HMI_STATUS_UW10_CALC_P3_FBKSpeed  300000.0  1349.309937  0.086918  1349.307617  1349.307617  1349.307617  1349.307617  1353.948853
+[5:221]BC10_CG_MANAGE_IDB_POS_SPEED            300000.0     0.446177  3.493116   -20.000000     0.000000     0.000000     0.000000    30.000000
+[5:223]BC10_CG_MANAGE_IDB_POS_SPEED            300000.0     0.446177  3.493116   -20.000000     0.000000     0.000000     0.000000    30.000000
+[5:226]BR10 - CR10 FAST SPEED REF SETPOINT     300000.0     0.000000  0.000000     0.000000     0.000000     0.000000     0.000000     0.000000
+
+--- FORCE/TORQUE COLUMNS (first 10) ---
+                                                       count         mean         std          min          25%          50%          75%           max
+[2:129]PLC01_HMI_STATUS_UW10_CALC_P1_FBKTorque      300000.0     2.918225    5.661834     1.763916     1.831055     1.843262     1.855469     33.367920
+[2:133]PLC01_HMI_STATUS_UW10_CALC_P2_FBKTorque      300000.0     0.000000    0.000000     0.000000     0.000000     0.000000     0.000000      0.000000
+[2:137]PLC01_HMI_STATUS_UW10_CALC_P3_FBKTorque      300000.0     3.004634    5.645663     1.855469     1.916504     1.934814     1.947021     33.404541
+[6:34]FERT_SEC1_DRV_IDB_DIN_TORQUE                  300000.0    79.167084  485.533081 -7022.000000     0.000000     0.000000     0.000000   3648.000000
+[6:40]S120_1A21PN002_IDB_FUR_CHRG_RT_DIN_TORQUE     300000.0  2440.264893  666.338135 -3337.000000  2487.000000  2581.000000  2665.000000   9435.000000
+[6:46]S120_1A21PN011_IDB_FUR_DHG_RT_DIN_TORQUE      300000.0  2285.777100  508.757263 -1582.000000  2236.000000  2318.000000  2398.000000  14488.000000
+[6:52]S120_1A21PN003_IDB_KICK_IN_ARM_01_DIN_TORQUE  300000.0    -5.433427  522.090271 -8116.000000     0.000000     0.000000     0.000000   8535.000000
+[6:58]S120_1A21PN004_IDB_KICK_IN_ARM_02_DIN_TORQUE  300000.0    26.306606  739.575928 -8407.000000     0.000000     0.000000     0.000000  12084.000000
+[6:66]S120_1A21PN005_IDB_KICK_IN_ARM_03_DIN_TORQUE  300000.0    -4.263474  516.129395 -5986.000000     0.000000     0.000000     0.000000   8759.000000
+[6:72]S120_1A21PN006_IDB_KICK_IN_ARM_04_DIN_TORQUE  300000.0    10.287463  604.233459 -9048.000000     0.000000     0.000000     0.000000  11899.000000
+
+--- LOOPER COLUMNS (first 10) ---
+                                                                                       count unique    top    freq
+[13_300]RML+EL11-BSL_01_A Looper #1 (St 11-12) - Loop Position monitoring             300000      2  False  190282
+[13_302]RML+FL21-BSL_01_A Looper #2 (St 12-13) - Loop Position monitoring             300000      2  False  191845
+[13_303]RML+FL31-BSL_01_A Looper #3 (St 13-14) - Loop Position monitoring             300000      2  False  191624
+[13_304]RML+FL41-BSL_01_A Looper #4 (St 14-15) - Loop Position monitoring             300000      2  False  191431
+[13_305]RML+FL51-BSL_01_A Looper #5 (St 15-16) - Loop position monitoring             300000      2  False  191286
+[13_308]RML+FL61-BSL_01_A Looper #6 (St 16-17) - Loop position monitoring             300000      2  False  192015
+[13_309]RML+FL71-BSL_01_A Looper #7 (St 17-18) - Loop position monitoring             300000      2  False  192002
+[13_310]RML+FL81-BSL_01_A Looper #8 (St 18-19) - Loop position monitoring             300000      2  False  192029
+[13_311]RML+FL91-BSL_01_A Looper #9 (St 19-20) - Loop position monitoring             300000      2  False  191980
+[13_313]WRL+GL11-BSL_01_A Looper in front Finishing Block - Loop Position monitoring  300000      2  False  193653
+
+====================================================================================================
+FILE 2/9: L1718_COBBLE_26112024.parquet
+Size: 248.9 MB
+====================================================================================================
+Rows: 407,610
+Columns: 10646
+Row Groups: 1
+
+--- COLUMN CATEGORIES ---
+  time                     :   102 columns
+  cobble_alarm_fault       :   484 columns
+  force_torque             :   298 columns
+  speed                    :   262 columns
+  temperature              :   540 columns
+  current_power            :   317 columns
+  looper                   :   240 columns
+  roll                     :   264 columns
+  vibration                :    10 columns
+  position_gap             :   111 columns
+  pressure                 :     7 columns
+  tracking                 :    89 columns
+  other_bool               :  6608 columns
+  other_numeric            :  1314 columns
+
+--- COBBLE/ALARM/FAULT COLUMNS (CRITICAL) ---
+  [1:0]STD01 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:1]STD01 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:2]STD02 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:3]STD02 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:4]STD03 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:5]STD03 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:6]STD04 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:7]STD04 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:8]STD05 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:9]STD05 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:10]STD06 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:11]STD06 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:12]STD07 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:13]STD07 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:14]STD08 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:15]STD08 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:16]STD09 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:17]STD09 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:18]STD10 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:19]STD10 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:20]STD11 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:21]STD11 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:22]STD12 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:23]STD12 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:24]STD13 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:25]STD13 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:26]STD14 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:27]STD14 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:28]STD15 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:29]STD15 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:30]STD16 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:31]STD16 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:32]STD17 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:33]STD17 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:34]STD18 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:35]STD18 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:36]STD19 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:37]STD19 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:38]STD20 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:39]STD20 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:44]SH001 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:45]SH001 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:46]SH002 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:47]SH002 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:48]SH003 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:49]SH003 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:50]PR003 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:51]PR003 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 407,610 (100.00%)
+  [1:143]STD01 B1 WARNING CUMULATIVE ALARM STATUS
+    dtype: float32
+    127.0: 407,610 (100.00%)
+  [1:144]STD02 B1 WARNING CUMULATIVE ALARM STATUS
+    dtype: float32
+    127.0: 407,610 (100.00%)
+
+--- TIME COLUMNS ---
+  [2_614]DB_UW10_AUX_DESCA_DESCALER_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+  [6_141]BC10_DB_CGRID_MANAG_ALARMS_FLD_PUSH_FW_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+  [6_142]BC10_DB_CGRID_MANAG_ALARMS_FLD_PUSH_BW_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+  [6_144]BC10_DB_CGRID_MANAG_ALARMS_FLD_LVR_LIFT_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+  [6_145]BC10_DB_CGRID_MANAG_ALARMS_FLD_LVR_LOW_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+
+--- SPEED COLUMNS (first 10) ---
+                                                  count         mean         std   min          25%          50%          75%          max
+[2:128]PLC01_HMI_STATUS_UW10_CALC_P1_FBKSpeed  407610.0  1086.410767  526.842285   0.0  1349.307617  1349.307617  1349.307617  1354.039795
+[2:132]PLC01_HMI_STATUS_UW10_CALC_P2_FBKSpeed  407610.0     0.000000    0.000000   0.0     0.000000     0.000000     0.000000     0.000000
+[2:136]PLC01_HMI_STATUS_UW10_CALC_P3_FBKSpeed  407610.0  1083.739502  528.919678   0.0  1349.307617  1349.307617  1349.307617  1353.948853
+[5:221]BC10_CG_MANAGE_IDB_POS_SPEED            407610.0     0.251454    2.577476 -20.0     0.000000     0.000000     0.000000    30.000000
+[5:223]BC10_CG_MANAGE_IDB_POS_SPEED            407610.0     0.251454    2.577476 -20.0     0.000000     0.000000     0.000000    30.000000
+[5:226]BR10 - CR10 FAST SPEED REF SETPOINT     407610.0     0.000000    0.000000   0.0     0.000000     0.000000     0.000000     0.000000
+
+--- FORCE/TORQUE COLUMNS (first 10) ---
+                                                       count         mean         std     min          25%          50%          75%           max
+[2:129]PLC01_HMI_STATUS_UW10_CALC_P1_FBKTorque      407610.0     2.196613    4.593018     0.0     1.867676     1.885986     1.904297     33.496094
+[2:133]PLC01_HMI_STATUS_UW10_CALC_P2_FBKTorque      407610.0     0.000000    0.000000     0.0     0.000000     0.000000     0.000000      0.000000
+[2:137]PLC01_HMI_STATUS_UW10_CALC_P3_FBKTorque      407610.0     2.269021    4.585186     0.0     1.959229     1.983643     2.001953     33.435059
+[6:34]FERT_SEC1_DRV_IDB_DIN_TORQUE                  407610.0    52.837479  396.174011 -7035.0     0.000000     0.000000     0.000000   3831.000000
+[6:40]S120_1A21PN002_IDB_FUR_CHRG_RT_DIN_TORQUE     407610.0  2481.791260  547.395447 -2205.0  2486.000000  2574.000000  2655.000000   9744.000000
+[6:46]S120_1A21PN011_IDB_FUR_DHG_RT_DIN_TORQUE      407610.0  2310.839844  375.815582 -1212.0  2254.000000  2331.000000  2405.000000  12923.000000
+[6:52]S120_1A21PN003_IDB_KICK_IN_ARM_01_DIN_TORQUE  407610.0    -3.856184  426.822906 -8208.0     0.000000     0.000000     0.000000   8669.000000
+[6:58]S120_1A21PN004_IDB_KICK_IN_ARM_02_DIN_TORQUE  407610.0    17.933304  610.106628 -7953.0     0.000000     0.000000     0.000000  11719.000000
+[6:66]S120_1A21PN005_IDB_KICK_IN_ARM_03_DIN_TORQUE  407610.0    -3.866139  419.541504 -7054.0     0.000000     0.000000     0.000000   8962.000000
+[6:72]S120_1A21PN006_IDB_KICK_IN_ARM_04_DIN_TORQUE  407610.0     8.017667  511.690063 -9064.0     0.000000     0.000000     0.000000  12076.000000
+
+--- LOOPER COLUMNS (first 10) ---
+                                                                                       count unique    top    freq
+[13_300]RML+EL11-BSL_01_A Looper #1 (St 11-12) - Loop Position monitoring             407610      2  False  342873
+[13_302]RML+FL21-BSL_01_A Looper #2 (St 12-13) - Loop Position monitoring             407610      2  False  345952
+[13_303]RML+FL31-BSL_01_A Looper #3 (St 13-14) - Loop Position monitoring             407610      2  False  345659
+[13_304]RML+FL41-BSL_01_A Looper #4 (St 14-15) - Loop Position monitoring             407610      2  False  345562
+[13_305]RML+FL51-BSL_01_A Looper #5 (St 15-16) - Loop position monitoring             407610      2  False  345133
+[13_308]RML+FL61-BSL_01_A Looper #6 (St 16-17) - Loop position monitoring             407610      2  False  346132
+[13_309]RML+FL71-BSL_01_A Looper #7 (St 17-18) - Loop position monitoring             407610      2  False  346083
+[13_310]RML+FL81-BSL_01_A Looper #8 (St 18-19) - Loop position monitoring             407610      2  False  346019
+[13_311]RML+FL91-BSL_01_A Looper #9 (St 19-20) - Loop position monitoring             407610      2  False  345986
+[13_313]WRL+GL11-BSL_01_A Looper in front Finishing Block - Loop Position monitoring  407610      2  False  345108
+
+====================================================================================================
+FILE 3/9: SH-02 CARRY FORWARD 24022025.parquet
+Size: 405.8 MB
+====================================================================================================
+Rows: 420,000
+Columns: 10646
+Row Groups: 1
+
+--- COLUMN CATEGORIES ---
+  time                     :   102 columns
+  cobble_alarm_fault       :   484 columns
+  force_torque             :   298 columns
+  speed                    :   262 columns
+  temperature              :   540 columns
+  current_power            :   317 columns
+  looper                   :   240 columns
+  roll                     :   267 columns
+  vibration                :    10 columns
+  position_gap             :   111 columns
+  pressure                 :     7 columns
+  tracking                 :    90 columns
+  other_bool               :  6604 columns
+  other_numeric            :  1314 columns
+
+--- COBBLE/ALARM/FAULT COLUMNS (CRITICAL) ---
+  [1:0]STD01 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:1]STD01 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:2]STD02 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:3]STD02 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:4]STD03 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:5]STD03 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:6]STD04 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:7]STD04 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:8]STD05 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:9]STD05 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:10]STD06 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:11]STD06 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:12]STD07 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:13]STD07 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:14]STD08 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:15]STD08 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:16]STD09 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:17]STD09 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:18]STD10 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:19]STD10 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:20]STD11 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:21]STD11 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:22]STD12 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:23]STD12 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:24]STD13 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:25]STD13 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:26]STD14 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:27]STD14 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:28]STD15 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:29]STD15 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:30]STD16 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:31]STD16 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:32]STD17 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:33]STD17 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:34]STD18 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:35]STD18 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:36]STD19 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:37]STD19 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:38]STD20 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:39]STD20 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:44]SH001 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:45]SH001 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:46]SH002 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:47]SH002 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:48]SH003 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:49]SH003 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:50]PR003 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:51]PR003 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:143]STD01 B1 WARNING CUMULATIVE ALARM STATUS
+    dtype: float32
+    127.0: 420,000 (100.00%)
+  [1:144]STD02 B1 WARNING CUMULATIVE ALARM STATUS
+    dtype: float32
+    127.0: 420,000 (100.00%)
+
+--- TIME COLUMNS ---
+  [2_614]DB_UW10_AUX_DESCA_DESCALER_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+  [6_141]BC10_DB_CGRID_MANAG_ALARMS_FLD_PUSH_FW_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+  [6_142]BC10_DB_CGRID_MANAG_ALARMS_FLD_PUSH_BW_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+  [6_144]BC10_DB_CGRID_MANAG_ALARMS_FLD_LVR_LIFT_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+  [6_145]BC10_DB_CGRID_MANAG_ALARMS_FLD_LVR_LOW_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+
+--- SPEED COLUMNS (first 10) ---
+                                                  count         mean       std         min         25%         50%         75%          max
+[2:128]PLC01_HMI_STATUS_UW10_CALC_P1_FBKSpeed  420000.0  1371.700562  0.133866  1371.69458  1371.69458  1371.69458  1371.69458  1376.153687
+[2:132]PLC01_HMI_STATUS_UW10_CALC_P2_FBKSpeed  420000.0     0.000000  0.000000     0.00000     0.00000     0.00000     0.00000     0.000000
+[2:136]PLC01_HMI_STATUS_UW10_CALC_P3_FBKSpeed  420000.0  1371.700684  0.134511  1371.69458  1371.69458  1371.69458  1371.69458  1376.244629
+[5:221]BC10_CG_MANAGE_IDB_POS_SPEED            420000.0     1.207815  5.557825   -20.00000     0.00000     0.00000     0.00000    30.000000
+[5:223]BC10_CG_MANAGE_IDB_POS_SPEED            420000.0     1.207815  5.557825   -20.00000     0.00000     0.00000     0.00000    30.000000
+[5:226]BR10 - CR10 FAST SPEED REF SETPOINT     420000.0     0.000000  0.000000     0.00000     0.00000     0.00000     0.00000     0.000000
+
+--- FORCE/TORQUE COLUMNS (first 10) ---
+                                                       count         mean          std          min          25%          50%          75%           max
+[2:129]PLC01_HMI_STATUS_UW10_CALC_P1_FBKTorque      420000.0     4.939954     9.019126     1.867676     1.947021     1.959229     1.977539     32.965088
+[2:133]PLC01_HMI_STATUS_UW10_CALC_P2_FBKTorque      420000.0     0.000000     0.000000     0.000000     0.000000     0.000000     0.000000      0.000000
+[2:137]PLC01_HMI_STATUS_UW10_CALC_P3_FBKTorque      420000.0     4.903867     8.968141     1.867676     1.928711     1.940918     1.953125     32.739258
+[6:34]FERT_SEC1_DRV_IDB_DIN_TORQUE                  420000.0   205.089386   756.045227 -7017.000000     0.000000     0.000000     0.000000   3827.000000
+[6:40]S120_1A21PN002_IDB_FUR_CHRG_RT_DIN_TORQUE     420000.0  2258.210693  1022.436829 -4715.000000  2478.000000  2603.000000  2703.000000   9178.000000
+[6:46]S120_1A21PN011_IDB_FUR_DHG_RT_DIN_TORQUE      420000.0  2202.677734   933.292297 -1368.000000  2206.000000  2317.000000  2424.000000  15576.000000
+[6:52]S120_1A21PN003_IDB_KICK_IN_ARM_01_DIN_TORQUE  420000.0   -36.190918   810.997314 -7703.000000     0.000000     0.000000     0.000000   8257.000000
+[6:58]S120_1A21PN004_IDB_KICK_IN_ARM_02_DIN_TORQUE  420000.0   110.083199  1261.279663 -7853.000000     0.000000     0.000000     0.000000  14011.000000
+[6:66]S120_1A21PN005_IDB_KICK_IN_ARM_03_DIN_TORQUE  420000.0   -18.112806   788.770142 -6406.000000     0.000000     0.000000     0.000000   9281.000000
+[6:72]S120_1A21PN006_IDB_KICK_IN_ARM_04_DIN_TORQUE  420000.0    24.860273   948.693176 -9068.000000     0.000000     0.000000     0.000000  12309.000000
+
+--- LOOPER COLUMNS (first 10) ---
+                                                                                       count unique   top    freq
+[13_300]RML+EL11-BSL_01_A Looper #1 (St 11-12) - Loop Position monitoring             420000      2  True  224727
+[13_302]RML+FL21-BSL_01_A Looper #2 (St 12-13) - Loop Position monitoring             420000      2  True  253071
+[13_303]RML+FL31-BSL_01_A Looper #3 (St 13-14) - Loop Position monitoring             420000      2  True  222896
+[13_304]RML+FL41-BSL_01_A Looper #4 (St 14-15) - Loop Position monitoring             420000      2  True  223039
+[13_305]RML+FL51-BSL_01_A Looper #5 (St 15-16) - Loop position monitoring             420000      2  True  223114
+[13_308]RML+FL61-BSL_01_A Looper #6 (St 16-17) - Loop position monitoring             420000      2  True  223245
+[13_309]RML+FL71-BSL_01_A Looper #7 (St 17-18) - Loop position monitoring             420000      2  True  223258
+[13_310]RML+FL81-BSL_01_A Looper #8 (St 18-19) - Loop position monitoring             420000      2  True  223304
+[13_311]RML+FL91-BSL_01_A Looper #9 (St 19-20) - Loop position monitoring             420000      2  True  223312
+[13_313]WRL+GL11-BSL_01_A Looper in front Finishing Block - Loop Position monitoring  420000      2  True  222630
+
+====================================================================================================
+FILE 4/9: SH-02 COBBLE 22022025.parquet
+Size: 226.7 MB
+====================================================================================================
+Rows: 337,320
+Columns: 10646
+Row Groups: 1
+
+--- COLUMN CATEGORIES ---
+  time                     :   102 columns
+  cobble_alarm_fault       :   484 columns
+  force_torque             :   298 columns
+  speed                    :   262 columns
+  temperature              :   540 columns
+  current_power            :   317 columns
+  looper                   :   240 columns
+  roll                     :   267 columns
+  vibration                :    10 columns
+  position_gap             :   111 columns
+  pressure                 :     7 columns
+  tracking                 :    90 columns
+  other_bool               :  6604 columns
+  other_numeric            :  1314 columns
+
+--- COBBLE/ALARM/FAULT COLUMNS (CRITICAL) ---
+  [1:0]STD01 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:1]STD01 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:2]STD02 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:3]STD02 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:4]STD03 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:5]STD03 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:6]STD04 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:7]STD04 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:8]STD05 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:9]STD05 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:10]STD06 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:11]STD06 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:12]STD07 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:13]STD07 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:14]STD08 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:15]STD08 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:16]STD09 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:17]STD09 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:18]STD10 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:19]STD10 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:20]STD11 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:21]STD11 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:22]STD12 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:23]STD12 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:24]STD13 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:25]STD13 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:26]STD14 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:27]STD14 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:28]STD15 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:29]STD15 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:30]STD16 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:31]STD16 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:32]STD17 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:33]STD17 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:34]STD18 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:35]STD18 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:36]STD19 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:37]STD19 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:38]STD20 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:39]STD20 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:44]SH001 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:45]SH001 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:46]SH002 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:47]SH002 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:48]SH003 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:49]SH003 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:50]PR003 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:51]PR003 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 337,320 (100.00%)
+  [1:143]STD01 B1 WARNING CUMULATIVE ALARM STATUS
+    dtype: float32
+    127.0: 337,320 (100.00%)
+  [1:144]STD02 B1 WARNING CUMULATIVE ALARM STATUS
+    dtype: float32
+    127.0: 337,320 (100.00%)
+
+--- TIME COLUMNS ---
+  [2_614]DB_UW10_AUX_DESCA_DESCALER_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+  [6_141]BC10_DB_CGRID_MANAG_ALARMS_FLD_PUSH_FW_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+  [6_142]BC10_DB_CGRID_MANAG_ALARMS_FLD_PUSH_BW_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+  [6_144]BC10_DB_CGRID_MANAG_ALARMS_FLD_LVR_LIFT_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+  [6_145]BC10_DB_CGRID_MANAG_ALARMS_FLD_LVR_LOW_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+
+--- SPEED COLUMNS (first 10) ---
+                                                  count         mean       std          min          25%          50%          75%          max
+[2:128]PLC01_HMI_STATUS_UW10_CALC_P1_FBKSpeed  337320.0     0.000000  0.000000     0.000000     0.000000     0.000000     0.000000     0.000000
+[2:132]PLC01_HMI_STATUS_UW10_CALC_P2_FBKSpeed  337320.0  1349.310791  0.099419  1349.307617  1349.307617  1349.307617  1349.307617  1353.857910
+[2:136]PLC01_HMI_STATUS_UW10_CALC_P3_FBKSpeed  337320.0  1349.310425  0.090229  1349.307617  1349.307617  1349.307617  1349.307617  1353.402832
+[5:221]BC10_CG_MANAGE_IDB_POS_SPEED            337320.0     0.673822  4.149239   -20.000000     0.000000     0.000000     0.000000    30.000000
+[5:223]BC10_CG_MANAGE_IDB_POS_SPEED            337320.0     0.673822  4.149239   -20.000000     0.000000     0.000000     0.000000    30.000000
+[5:226]BR10 - CR10 FAST SPEED REF SETPOINT     337320.0     0.000000  0.000000     0.000000     0.000000     0.000000     0.000000     0.000000
+
+--- FORCE/TORQUE COLUMNS (first 10) ---
+                                                       count         mean         std          min          25%          50%          75%           max
+[2:129]PLC01_HMI_STATUS_UW10_CALC_P1_FBKTorque      337320.0     0.000000    0.000000     0.000000     0.000000     0.000000     0.000000      0.000000
+[2:133]PLC01_HMI_STATUS_UW10_CALC_P2_FBKTorque      337320.0     3.081026    6.179353     1.654053     1.702881     1.715088     1.721191     31.683350
+[2:137]PLC01_HMI_STATUS_UW10_CALC_P3_FBKTorque      337320.0     3.272437    6.191071     1.831055     1.885986     1.904297     1.922607     31.921387
+[6:34]FERT_SEC1_DRV_IDB_DIN_TORQUE                  337320.0   108.977585  558.558777 -6832.000000     0.000000     0.000000     0.000000   3796.000000
+[6:40]S120_1A21PN002_IDB_FUR_CHRG_RT_DIN_TORQUE     337320.0  2385.908936  774.348938 -4813.000000  2480.000000  2577.000000  2664.000000   9563.000000
+[6:46]S120_1A21PN011_IDB_FUR_DHG_RT_DIN_TORQUE      337320.0  2268.256348  612.112549 -1253.000000  2219.000000  2305.000000  2389.000000  14637.000000
+[6:52]S120_1A21PN003_IDB_KICK_IN_ARM_01_DIN_TORQUE  337320.0   -17.454233  604.476013 -7363.000000     0.000000     0.000000     0.000000   8254.000000
+[6:58]S120_1A21PN004_IDB_KICK_IN_ARM_02_DIN_TORQUE  337320.0    39.704033  900.797485 -8008.000000     0.000000     0.000000     0.000000  14172.000000
+[6:66]S120_1A21PN005_IDB_KICK_IN_ARM_03_DIN_TORQUE  337320.0    -0.079352  635.823120 -6149.000000     0.000000     0.000000     0.000000   9282.000000
+[6:72]S120_1A21PN006_IDB_KICK_IN_ARM_04_DIN_TORQUE  337320.0     4.782373  685.084045 -9927.000000     0.000000     0.000000     0.000000  13681.000000
+
+--- LOOPER COLUMNS (first 10) ---
+                                                                                       count unique    top    freq
+[13_300]RML+EL11-BSL_01_A Looper #1 (St 11-12) - Loop Position monitoring             337320      2  False  255924
+[13_302]RML+FL21-BSL_01_A Looper #2 (St 12-13) - Loop Position monitoring             337320      2  False  245263
+[13_303]RML+FL31-BSL_01_A Looper #3 (St 13-14) - Loop Position monitoring             337320      2  False  258581
+[13_304]RML+FL41-BSL_01_A Looper #4 (St 14-15) - Loop Position monitoring             337320      2  False  258499
+[13_305]RML+FL51-BSL_01_A Looper #5 (St 15-16) - Loop position monitoring             337320      2  False  228673
+[13_308]RML+FL61-BSL_01_A Looper #6 (St 16-17) - Loop position monitoring             337320      2  False  258729
+[13_309]RML+FL71-BSL_01_A Looper #7 (St 17-18) - Loop position monitoring             337320      2  False  258699
+[13_310]RML+FL81-BSL_01_A Looper #8 (St 18-19) - Loop position monitoring             337320      2  False  258673
+[13_311]RML+FL91-BSL_01_A Looper #9 (St 19-20) - Loop position monitoring             337320      2  False  258650
+[13_313]WRL+GL11-BSL_01_A Looper in front Finishing Block - Loop Position monitoring  337320      2  False  258174
+
+====================================================================================================
+FILE 5/9: SH-03 COBBLE 11122024.parquet
+Size: 828.5 MB
+====================================================================================================
+Rows: 1,260,000
+Columns: 10646
+Row Groups: 1
+
+--- COLUMN CATEGORIES ---
+  time                     :   102 columns
+  cobble_alarm_fault       :   484 columns
+  force_torque             :   298 columns
+  speed                    :   262 columns
+  temperature              :   540 columns
+  current_power            :   317 columns
+  looper                   :   240 columns
+  roll                     :   264 columns
+  vibration                :    10 columns
+  position_gap             :   111 columns
+  pressure                 :     7 columns
+  tracking                 :    89 columns
+  other_bool               :  6608 columns
+  other_numeric            :  1314 columns
+
+--- COBBLE/ALARM/FAULT COLUMNS (CRITICAL) ---
+  [1:0]STD01 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:1]STD01 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:2]STD02 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:3]STD02 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:4]STD03 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:5]STD03 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:6]STD04 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:7]STD04 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:8]STD05 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:9]STD05 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:10]STD06 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:11]STD06 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:12]STD07 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:13]STD07 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:14]STD08 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:15]STD08 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:16]STD09 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:17]STD09 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:18]STD10 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:19]STD10 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:20]STD11 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:21]STD11 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:22]STD12 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:23]STD12 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:24]STD13 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:25]STD13 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:26]STD14 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:27]STD14 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:28]STD15 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:29]STD15 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:30]STD16 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:31]STD16 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:32]STD17 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:33]STD17 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:34]STD18 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:35]STD18 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:36]STD19 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:37]STD19 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:38]STD20 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:39]STD20 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:44]SH001 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:45]SH001 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:46]SH002 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:47]SH002 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:48]SH003 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:49]SH003 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:50]PR003 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:51]PR003 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 1,260,000 (100.00%)
+  [1:143]STD01 B1 WARNING CUMULATIVE ALARM STATUS
+    dtype: float32
+    127.0: 1,260,000 (100.00%)
+  [1:144]STD02 B1 WARNING CUMULATIVE ALARM STATUS
+    dtype: float32
+    127.0: 1,260,000 (100.00%)
+
+--- TIME COLUMNS ---
+  [2_614]DB_UW10_AUX_DESCA_DESCALER_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+  [6_141]BC10_DB_CGRID_MANAG_ALARMS_FLD_PUSH_FW_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+  [6_142]BC10_DB_CGRID_MANAG_ALARMS_FLD_PUSH_BW_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+  [6_144]BC10_DB_CGRID_MANAG_ALARMS_FLD_LVR_LIFT_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+  [6_145]BC10_DB_CGRID_MANAG_ALARMS_FLD_LVR_LOW_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+
+--- SPEED COLUMNS (first 10) ---
+                                                   count         mean         std   min          25%          50%          75%          max
+[2:128]PLC01_HMI_STATUS_UW10_CALC_P1_FBKSpeed  1260000.0     0.000000    0.000000   0.0     0.000000     0.000000     0.000000     0.000000
+[2:132]PLC01_HMI_STATUS_UW10_CALC_P2_FBKSpeed  1260000.0  1109.495483  512.010498   0.0  1349.307617  1349.307617  1349.307617  1354.494873
+[2:136]PLC01_HMI_STATUS_UW10_CALC_P3_FBKSpeed  1260000.0  1107.764038  513.475891   0.0  1349.307617  1349.307617  1349.307617  1353.948853
+[5:221]BC10_CG_MANAGE_IDB_POS_SPEED            1260000.0     0.349218    3.024755 -20.0     0.000000     0.000000     0.000000    30.000000
+[5:223]BC10_CG_MANAGE_IDB_POS_SPEED            1260000.0     0.349218    3.024755 -20.0     0.000000     0.000000     0.000000    30.000000
+[5:226]BR10 - CR10 FAST SPEED REF SETPOINT     1260000.0     0.000000    0.000000   0.0     0.000000     0.000000     0.000000     0.000000
+
+--- FORCE/TORQUE COLUMNS (first 10) ---
+                                                        count         mean         std     min          25%          50%          75%           max
+[2:129]PLC01_HMI_STATUS_UW10_CALC_P1_FBKTorque      1260000.0     0.000000    0.000000     0.0     0.000000     0.000000     0.000000      0.000000
+[2:133]PLC01_HMI_STATUS_UW10_CALC_P2_FBKTorque      1260000.0     2.088111    4.384925     0.0     1.751709     1.770020     1.788330     32.867432
+[2:137]PLC01_HMI_STATUS_UW10_CALC_P3_FBKTorque      1260000.0     2.263210    4.420965     0.0     1.959229     1.983643     2.001953     33.184814
+[6:34]FERT_SEC1_DRV_IDB_DIN_TORQUE                  1260000.0    63.420311  430.140839 -6932.0     0.000000     0.000000     0.000000   3947.000000
+[6:40]S120_1A21PN002_IDB_FUR_CHRG_RT_DIN_TORQUE     1260000.0  2518.578125  581.790405 -4024.0  2535.000000  2622.000000  2703.000000  10138.000000
+[6:46]S120_1A21PN011_IDB_FUR_DHG_RT_DIN_TORQUE      1260000.0  2293.670166  316.793060 -1549.0  2225.000000  2303.000000  2378.000000  15509.000000
+[6:52]S120_1A21PN003_IDB_KICK_IN_ARM_01_DIN_TORQUE  1260000.0    -8.369875  455.174255 -8109.0     0.000000     0.000000     0.000000   8795.000000
+[6:58]S120_1A21PN004_IDB_KICK_IN_ARM_02_DIN_TORQUE  1260000.0    27.447607  672.142578 -7975.0     0.000000     0.000000     0.000000  13180.000000
+[6:66]S120_1A21PN005_IDB_KICK_IN_ARM_03_DIN_TORQUE  1260000.0    -5.882833  430.020813 -6671.0     0.000000     0.000000     0.000000   9272.000000
+[6:72]S120_1A21PN006_IDB_KICK_IN_ARM_04_DIN_TORQUE  1260000.0     4.833668  539.045654 -8862.0     0.000000     0.000000     0.000000  12236.000000
+
+--- LOOPER COLUMNS (first 10) ---
+                                                                                        count unique    top     freq
+[13_300]RML+EL11-BSL_01_A Looper #1 (St 11-12) - Loop Position monitoring             1260000      2  False  1097268
+[13_302]RML+FL21-BSL_01_A Looper #2 (St 12-13) - Loop Position monitoring             1260000      2  False  1100280
+[13_303]RML+FL31-BSL_01_A Looper #3 (St 13-14) - Loop Position monitoring             1260000      2  False  1101298
+[13_304]RML+FL41-BSL_01_A Looper #4 (St 14-15) - Loop Position monitoring             1260000      2  False  1101674
+[13_305]RML+FL51-BSL_01_A Looper #5 (St 15-16) - Loop position monitoring             1260000      2  False  1101529
+[13_308]RML+FL61-BSL_01_A Looper #6 (St 16-17) - Loop position monitoring             1260000      2  False  1122558
+[13_309]RML+FL71-BSL_01_A Looper #7 (St 17-18) - Loop position monitoring             1260000      2  False  1122768
+[13_310]RML+FL81-BSL_01_A Looper #8 (St 18-19) - Loop position monitoring             1260000      2  False  1122866
+[13_311]RML+FL91-BSL_01_A Looper #9 (St 19-20) - Loop position monitoring             1260000      2  False  1122923
+[13_313]WRL+GL11-BSL_01_A Looper in front Finishing Block - Loop Position monitoring  1260000      1  False  1260000
+
+====================================================================================================
+FILE 6/9: SH-03 COBBLE 23112024.parquet
+Size: 226.0 MB
+====================================================================================================
+Rows: 420,000
+Columns: 10646
+Row Groups: 1
+
+--- COLUMN CATEGORIES ---
+  time                     :   102 columns
+  cobble_alarm_fault       :   484 columns
+  force_torque             :   298 columns
+  speed                    :   262 columns
+  temperature              :   540 columns
+  current_power            :   317 columns
+  looper                   :   240 columns
+  roll                     :   264 columns
+  vibration                :    10 columns
+  position_gap             :   111 columns
+  pressure                 :     7 columns
+  tracking                 :    89 columns
+  other_bool               :  6608 columns
+  other_numeric            :  1314 columns
+
+--- COBBLE/ALARM/FAULT COLUMNS (CRITICAL) ---
+  [1:0]STD01 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:1]STD01 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:2]STD02 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:3]STD02 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:4]STD03 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:5]STD03 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:6]STD04 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:7]STD04 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:8]STD05 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:9]STD05 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:10]STD06 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:11]STD06 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:12]STD07 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:13]STD07 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:14]STD08 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:15]STD08 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:16]STD09 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:17]STD09 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:18]STD10 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:19]STD10 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:20]STD11 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:21]STD11 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:22]STD12 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:23]STD12 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:24]STD13 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:25]STD13 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:26]STD14 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:27]STD14 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:28]STD15 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:29]STD15 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:30]STD16 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:31]STD16 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:32]STD17 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:33]STD17 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:34]STD18 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:35]STD18 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:36]STD19 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:37]STD19 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:38]STD20 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:39]STD20 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:44]SH001 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:45]SH001 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:46]SH002 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:47]SH002 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:48]SH003 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:49]SH003 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:50]PR003 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:51]PR003 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 420,000 (100.00%)
+  [1:143]STD01 B1 WARNING CUMULATIVE ALARM STATUS
+    dtype: float32
+    127.0: 420,000 (100.00%)
+  [1:144]STD02 B1 WARNING CUMULATIVE ALARM STATUS
+    dtype: float32
+    127.0: 420,000 (100.00%)
+
+--- TIME COLUMNS ---
+  [2_614]DB_UW10_AUX_DESCA_DESCALER_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+  [6_141]BC10_DB_CGRID_MANAG_ALARMS_FLD_PUSH_FW_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+  [6_142]BC10_DB_CGRID_MANAG_ALARMS_FLD_PUSH_BW_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+  [6_144]BC10_DB_CGRID_MANAG_ALARMS_FLD_LVR_LIFT_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+  [6_145]BC10_DB_CGRID_MANAG_ALARMS_FLD_LVR_LOW_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+
+--- SPEED COLUMNS (first 10) ---
+                                                  count         mean       std          min          25%          50%          75%          max
+[2:128]PLC01_HMI_STATUS_UW10_CALC_P1_FBKSpeed  420000.0  1349.308228  0.046055  1349.307617  1349.307617  1349.307617  1349.307617  1354.039795
+[2:132]PLC01_HMI_STATUS_UW10_CALC_P2_FBKSpeed  420000.0     0.000000  0.000000     0.000000     0.000000     0.000000     0.000000     0.000000
+[2:136]PLC01_HMI_STATUS_UW10_CALC_P3_FBKSpeed  420000.0  1349.308228  0.046177  1349.307617  1349.307617  1349.307617  1349.307617  1354.039795
+[5:221]BC10_CG_MANAGE_IDB_POS_SPEED            420000.0     0.089148  1.483372     0.000000     0.000000     0.000000     0.000000    30.000000
+[5:223]BC10_CG_MANAGE_IDB_POS_SPEED            420000.0     0.089148  1.483372     0.000000     0.000000     0.000000     0.000000    30.000000
+[5:226]BR10 - CR10 FAST SPEED REF SETPOINT     420000.0     0.800000  0.000000     0.800000     0.800000     0.800000     0.800000     0.800000
+
+--- FORCE/TORQUE COLUMNS (first 10) ---
+                                                       count         mean         std          min          25%          50%          75%           max
+[2:129]PLC01_HMI_STATUS_UW10_CALC_P1_FBKTorque      420000.0     2.125879    2.941129     1.757812     1.831055     1.843262     1.855469     33.416748
+[2:133]PLC01_HMI_STATUS_UW10_CALC_P2_FBKTorque      420000.0     0.000000    0.000000     0.000000     0.000000     0.000000     0.000000      0.000000
+[2:137]PLC01_HMI_STATUS_UW10_CALC_P3_FBKTorque      420000.0     2.230329    2.928765     1.867676     1.940918     1.947021     1.959229     33.374023
+[6:34]FERT_SEC1_DRV_IDB_DIN_TORQUE                  420000.0    14.592509  208.584702 -6645.000000     0.000000     0.000000     0.000000   3711.000000
+[6:40]S120_1A21PN002_IDB_FUR_CHRG_RT_DIN_TORQUE     420000.0  2552.197510  304.794067 -3161.000000  2498.000000  2579.000000  2656.000000   9667.000000
+[6:46]S120_1A21PN011_IDB_FUR_DHG_RT_DIN_TORQUE      420000.0  2233.840820  466.692963  -917.000000  2225.000000  2304.000000  2380.000000  14917.000000
+[6:52]S120_1A21PN003_IDB_KICK_IN_ARM_01_DIN_TORQUE  420000.0    -0.349338  231.242355 -7893.000000     0.000000     0.000000     0.000000   8581.000000
+[6:58]S120_1A21PN004_IDB_KICK_IN_ARM_02_DIN_TORQUE  420000.0    -0.141248  318.198456 -7992.000000     0.000000     0.000000     0.000000  10496.000000
+[6:66]S120_1A21PN005_IDB_KICK_IN_ARM_03_DIN_TORQUE  420000.0     1.562669  254.665848 -6007.000000     0.000000     0.000000     0.000000   9036.000000
+[6:72]S120_1A21PN006_IDB_KICK_IN_ARM_04_DIN_TORQUE  420000.0     1.011012  240.073425 -9030.000000     0.000000     0.000000     0.000000  11787.000000
+
+--- LOOPER COLUMNS (first 10) ---
+                                                                                       count unique    top    freq
+[13_300]RML+EL11-BSL_01_A Looper #1 (St 11-12) - Loop Position monitoring             420000      2  False  388401
+[13_302]RML+FL21-BSL_01_A Looper #2 (St 12-13) - Loop Position monitoring             420000      2  False  391203
+[13_303]RML+FL31-BSL_01_A Looper #3 (St 13-14) - Loop Position monitoring             420000      2  False  391204
+[13_304]RML+FL41-BSL_01_A Looper #4 (St 14-15) - Loop Position monitoring             420000      2  False  391200
+[13_305]RML+FL51-BSL_01_A Looper #5 (St 15-16) - Loop position monitoring             420000      2  False  391198
+[13_308]RML+FL61-BSL_01_A Looper #6 (St 16-17) - Loop position monitoring             420000      2  False  392463
+[13_309]RML+FL71-BSL_01_A Looper #7 (St 17-18) - Loop position monitoring             420000      2  False  392455
+[13_310]RML+FL81-BSL_01_A Looper #8 (St 18-19) - Loop position monitoring             420000      2  False  392452
+[13_311]RML+FL91-BSL_01_A Looper #9 (St 19-20) - Loop position monitoring             420000      2  False  392065
+[13_313]WRL+GL11-BSL_01_A Looper in front Finishing Block - Loop Position monitoring  420000      2  False  392441
+
+====================================================================================================
+FILE 7/9: SH-03 DEV COBBLE 24022025.parquet
+Size: 280.3 MB
+====================================================================================================
+Rows: 333,600
+Columns: 10646
+Row Groups: 1
+
+--- COLUMN CATEGORIES ---
+  time                     :   102 columns
+  cobble_alarm_fault       :   484 columns
+  force_torque             :   298 columns
+  speed                    :   262 columns
+  temperature              :   540 columns
+  current_power            :   317 columns
+  looper                   :   240 columns
+  roll                     :   267 columns
+  vibration                :    10 columns
+  position_gap             :   111 columns
+  pressure                 :     7 columns
+  tracking                 :    90 columns
+  other_bool               :  6604 columns
+  other_numeric            :  1314 columns
+
+--- COBBLE/ALARM/FAULT COLUMNS (CRITICAL) ---
+  [1:0]STD01 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:1]STD01 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:2]STD02 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:3]STD02 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:4]STD03 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:5]STD03 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:6]STD04 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:7]STD04 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:8]STD05 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:9]STD05 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:10]STD06 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:11]STD06 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:12]STD07 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:13]STD07 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:14]STD08 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:15]STD08 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:16]STD09 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:17]STD09 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:18]STD10 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:19]STD10 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:20]STD11 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:21]STD11 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:22]STD12 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:23]STD12 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:24]STD13 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:25]STD13 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:26]STD14 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:27]STD14 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:28]STD15 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:29]STD15 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:30]STD16 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:31]STD16 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:32]STD17 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:33]STD17 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:34]STD18 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:35]STD18 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:36]STD19 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:37]STD19 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:38]STD20 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:39]STD20 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:44]SH001 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:45]SH001 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:46]SH002 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:47]SH002 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:48]SH003 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:49]SH003 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:50]PR003 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:51]PR003 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 333,600 (100.00%)
+  [1:143]STD01 B1 WARNING CUMULATIVE ALARM STATUS
+    dtype: float32
+    127.0: 333,600 (100.00%)
+  [1:144]STD02 B1 WARNING CUMULATIVE ALARM STATUS
+    dtype: float32
+    127.0: 333,600 (100.00%)
+
+--- TIME COLUMNS ---
+  [2_614]DB_UW10_AUX_DESCA_DESCALER_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+  [6_141]BC10_DB_CGRID_MANAG_ALARMS_FLD_PUSH_FW_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+  [6_142]BC10_DB_CGRID_MANAG_ALARMS_FLD_PUSH_BW_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+  [6_144]BC10_DB_CGRID_MANAG_ALARMS_FLD_LVR_LIFT_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+  [6_145]BC10_DB_CGRID_MANAG_ALARMS_FLD_LVR_LOW_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+
+--- SPEED COLUMNS (first 10) ---
+                                                  count         mean         std   min         25%         50%         75%          max
+[2:128]PLC01_HMI_STATUS_UW10_CALC_P1_FBKSpeed  333600.0  1217.841431  426.820496   0.0  1371.69458  1371.69458  1371.69458  1375.971680
+[2:132]PLC01_HMI_STATUS_UW10_CALC_P2_FBKSpeed  333600.0     0.000000    0.000000   0.0     0.00000     0.00000     0.00000     0.000000
+[2:136]PLC01_HMI_STATUS_UW10_CALC_P3_FBKSpeed  333600.0  1214.523071  430.924438   0.0  1371.69458  1371.69458  1371.69458  1376.062744
+[5:221]BC10_CG_MANAGE_IDB_POS_SPEED            333600.0     0.412320    3.366585 -20.0     0.00000     0.00000     0.00000    30.000000
+[5:223]BC10_CG_MANAGE_IDB_POS_SPEED            333600.0     0.412320    3.366585 -20.0     0.00000     0.00000     0.00000    30.000000
+[5:226]BR10 - CR10 FAST SPEED REF SETPOINT     333600.0     0.000000    0.000000   0.0     0.00000     0.00000     0.00000     0.000000
+
+--- FORCE/TORQUE COLUMNS (first 10) ---
+                                                       count         mean         std     min          25%          50%          75%           max
+[2:129]PLC01_HMI_STATUS_UW10_CALC_P1_FBKTorque      333600.0     2.644177    4.849035     0.0     2.044678     2.087402     2.130127     33.190918
+[2:133]PLC01_HMI_STATUS_UW10_CALC_P2_FBKTorque      333600.0     0.000000    0.000000     0.0     0.000000     0.000000     0.000000      0.000000
+[2:137]PLC01_HMI_STATUS_UW10_CALC_P3_FBKTorque      333600.0     2.592132    4.808543     0.0     1.995850     2.032471     2.081299     32.922363
+[6:34]FERT_SEC1_DRV_IDB_DIN_TORQUE                  333600.0    82.338066  482.458374 -6970.0     0.000000     0.000000     0.000000   3917.000000
+[6:40]S120_1A21PN002_IDB_FUR_CHRG_RT_DIN_TORQUE     333600.0  2522.450195  655.415955 -3083.0  2562.000000  2652.000000  2734.000000   9366.000000
+[6:46]S120_1A21PN011_IDB_FUR_DHG_RT_DIN_TORQUE      333600.0  2319.716553  413.472046 -1167.0  2250.000000  2332.000000  2412.000000  14990.000000
+[6:52]S120_1A21PN003_IDB_KICK_IN_ARM_01_DIN_TORQUE  333600.0   -12.093354  508.870026 -7744.0     0.000000     0.000000     0.000000   8284.000000
+[6:58]S120_1A21PN004_IDB_KICK_IN_ARM_02_DIN_TORQUE  333600.0    30.240549  750.372375 -7952.0     0.000000     0.000000     0.000000  12412.000000
+[6:66]S120_1A21PN005_IDB_KICK_IN_ARM_03_DIN_TORQUE  333600.0    -4.659224  494.948547 -6259.0     0.000000     0.000000     0.000000   9280.000000
+[6:72]S120_1A21PN006_IDB_KICK_IN_ARM_04_DIN_TORQUE  333600.0     8.156526  583.034119 -8948.0     0.000000     0.000000     0.000000  12427.000000
+
+--- LOOPER COLUMNS (first 10) ---
+                                                                                       count unique    top    freq
+[13_300]RML+EL11-BSL_01_A Looper #1 (St 11-12) - Loop Position monitoring             333600      2  False  274038
+[13_302]RML+FL21-BSL_01_A Looper #2 (St 12-13) - Loop Position monitoring             333600      2  False  275779
+[13_303]RML+FL31-BSL_01_A Looper #3 (St 13-14) - Loop Position monitoring             333600      2  False  275778
+[13_304]RML+FL41-BSL_01_A Looper #4 (St 14-15) - Loop Position monitoring             333600      2  False  275773
+[13_305]RML+FL51-BSL_01_A Looper #5 (St 15-16) - Loop position monitoring             333600      2  False  275774
+[13_308]RML+FL61-BSL_01_A Looper #6 (St 16-17) - Loop position monitoring             333600      2  False  276445
+[13_309]RML+FL71-BSL_01_A Looper #7 (St 17-18) - Loop position monitoring             333600      2  False  276449
+[13_310]RML+FL81-BSL_01_A Looper #8 (St 18-19) - Loop position monitoring             333600      2  False  276404
+[13_311]RML+FL91-BSL_01_A Looper #9 (St 19-20) - Loop position monitoring             333600      2  False  276301
+[13_313]WRL+GL11-BSL_01_A Looper in front Finishing Block - Loop Position monitoring  333600      2  False  276376
+
+====================================================================================================
+FILE 8/9: STD-15 REF CHANGE COBBLE 22012025.parquet
+Size: 360.1 MB
+====================================================================================================
+Rows: 537,610
+Columns: 10646
+Row Groups: 1
+
+--- COLUMN CATEGORIES ---
+  time                     :   102 columns
+  cobble_alarm_fault       :   484 columns
+  force_torque             :   298 columns
+  speed                    :   262 columns
+  temperature              :   540 columns
+  current_power            :   317 columns
+  looper                   :   240 columns
+  roll                     :   264 columns
+  vibration                :    10 columns
+  position_gap             :   111 columns
+  pressure                 :     7 columns
+  tracking                 :    90 columns
+  other_bool               :  6607 columns
+  other_numeric            :  1314 columns
+
+--- COBBLE/ALARM/FAULT COLUMNS (CRITICAL) ---
+  [1:0]STD01 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:1]STD01 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:2]STD02 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:3]STD02 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:4]STD03 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:5]STD03 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:6]STD04 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:7]STD04 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:8]STD05 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:9]STD05 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:10]STD06 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:11]STD06 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:12]STD07 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:13]STD07 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:14]STD08 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:15]STD08 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:16]STD09 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:17]STD09 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:18]STD10 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:19]STD10 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:20]STD11 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:21]STD11 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:22]STD12 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:23]STD12 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:24]STD13 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:25]STD13 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:26]STD14 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:27]STD14 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:28]STD15 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 526,825 (97.99%)
+    7903.0: 10,785 (2.01%)
+  [1:29]STD15 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:30]STD16 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:31]STD16 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:32]STD17 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:33]STD17 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:34]STD18 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:35]STD18 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:36]STD19 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:37]STD19 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:38]STD20 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:39]STD20 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:44]SH001 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:45]SH001 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:46]SH002 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:47]SH002 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:48]SH003 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:49]SH003 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:50]PR003 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:51]PR003 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 537,610 (100.00%)
+  [1:143]STD01 B1 WARNING CUMULATIVE ALARM STATUS
+    dtype: float32
+    127.0: 537,610 (100.00%)
+  [1:144]STD02 B1 WARNING CUMULATIVE ALARM STATUS
+    dtype: float32
+    127.0: 537,610 (100.00%)
+
+--- TIME COLUMNS ---
+  [2_614]DB_UW10_AUX_DESCA_DESCALER_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+  [6_141]BC10_DB_CGRID_MANAG_ALARMS_FLD_PUSH_FW_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+  [6_142]BC10_DB_CGRID_MANAG_ALARMS_FLD_PUSH_BW_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+  [6_144]BC10_DB_CGRID_MANAG_ALARMS_FLD_LVR_LIFT_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+  [6_145]BC10_DB_CGRID_MANAG_ALARMS_FLD_LVR_LOW_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+
+--- SPEED COLUMNS (first 10) ---
+                                                  count         mean       std          min          25%          50%          75%          max
+[2:128]PLC01_HMI_STATUS_UW10_CALC_P1_FBKSpeed  537610.0     0.000000  0.000000     0.000000     0.000000     0.000000     0.000000     0.000000
+[2:132]PLC01_HMI_STATUS_UW10_CALC_P2_FBKSpeed  537610.0  1349.310669  0.098432  1349.307617  1349.307617  1349.307617  1349.307617  1354.312866
+[2:136]PLC01_HMI_STATUS_UW10_CALC_P3_FBKSpeed  537610.0  1349.310181  0.084953  1349.307617  1349.307617  1349.307617  1349.307617  1353.857910
+[5:221]BC10_CG_MANAGE_IDB_POS_SPEED            537610.0     0.573831  3.870713   -20.000000     0.000000     0.000000     0.000000    30.000000
+[5:223]BC10_CG_MANAGE_IDB_POS_SPEED            537610.0     0.573831  3.870713   -20.000000     0.000000     0.000000     0.000000    30.000000
+[5:226]BR10 - CR10 FAST SPEED REF SETPOINT     537610.0     0.000000  0.000000     0.000000     0.000000     0.000000     0.000000     0.000000
+
+--- FORCE/TORQUE COLUMNS (first 10) ---
+                                                       count         mean         std          min          25%          50%          75%           max
+[2:129]PLC01_HMI_STATUS_UW10_CALC_P1_FBKTorque      537610.0     0.000000    0.000000     0.000000     0.000000     0.000000     0.000000      0.000000
+[2:133]PLC01_HMI_STATUS_UW10_CALC_P2_FBKTorque      537610.0     2.857379    5.693568     1.672363     1.721191     1.733398     1.739502     32.318115
+[2:137]PLC01_HMI_STATUS_UW10_CALC_P3_FBKTorque      537610.0     3.078479    5.707686     1.861572     1.930237     1.953125     1.965332     32.586670
+[6:34]FERT_SEC1_DRV_IDB_DIN_TORQUE                  537610.0    98.383629  529.753418 -6857.000000     0.000000     0.000000     0.000000   3799.000000
+[6:40]S120_1A21PN002_IDB_FUR_CHRG_RT_DIN_TORQUE     537610.0  2426.385010  755.192810 -4686.000000  2513.000000  2609.000000  2695.000000   9301.000000
+[6:46]S120_1A21PN011_IDB_FUR_DHG_RT_DIN_TORQUE      537610.0  2258.933838  531.299438 -1313.000000  2213.000000  2292.000000  2369.000000  14756.000000
+[6:52]S120_1A21PN003_IDB_KICK_IN_ARM_01_DIN_TORQUE  537610.0   -13.299230  585.362244 -7915.000000     0.000000     0.000000     0.000000   8417.000000
+[6:58]S120_1A21PN004_IDB_KICK_IN_ARM_02_DIN_TORQUE  537610.0    47.991428  861.241455 -7861.000000     0.000000     0.000000     0.000000  13489.000000
+[6:66]S120_1A21PN005_IDB_KICK_IN_ARM_03_DIN_TORQUE  537610.0    -6.464513  566.229553 -6984.000000     0.000000     0.000000     0.000000   9075.000000
+[6:72]S120_1A21PN006_IDB_KICK_IN_ARM_04_DIN_TORQUE  537610.0    11.416092  669.278137 -9455.000000     0.000000     0.000000     0.000000  12128.000000
+
+--- LOOPER COLUMNS (first 10) ---
+                                                                                       count unique    top    freq
+[13_300]RML+EL11-BSL_01_A Looper #1 (St 11-12) - Loop Position monitoring             537610      2  False  443390
+[13_302]RML+FL21-BSL_01_A Looper #2 (St 12-13) - Loop Position monitoring             537610      2  False  445759
+[13_303]RML+FL31-BSL_01_A Looper #3 (St 13-14) - Loop Position monitoring             537610      2  False  445756
+[13_304]RML+FL41-BSL_01_A Looper #4 (St 14-15) - Loop Position monitoring             537610      2  False  445737
+[13_305]RML+FL51-BSL_01_A Looper #5 (St 15-16) - Loop position monitoring             537610      2  False  424479
+[13_308]RML+FL61-BSL_01_A Looper #6 (St 16-17) - Loop position monitoring             537610      2  False  446063
+[13_309]RML+FL71-BSL_01_A Looper #7 (St 17-18) - Loop position monitoring             537610      2  False  446067
+[13_310]RML+FL81-BSL_01_A Looper #8 (St 18-19) - Loop position monitoring             537610      2  False  446066
+[13_311]RML+FL91-BSL_01_A Looper #9 (St 19-20) - Loop position monitoring             537610      2  False  446067
+[13_313]WRL+GL11-BSL_01_A Looper in front Finishing Block - Loop Position monitoring  537610      2  False  445973
+
+====================================================================================================
+FILE 9/9: STD14-15 COBBLE 29012025.parquet
+Size: 369.0 MB
+====================================================================================================
+Rows: 489,190
+Columns: 10646
+Row Groups: 1
+
+--- COLUMN CATEGORIES ---
+  time                     :   102 columns
+  cobble_alarm_fault       :   484 columns
+  force_torque             :   298 columns
+  speed                    :   262 columns
+  temperature              :   540 columns
+  current_power            :   317 columns
+  looper                   :   240 columns
+  roll                     :   264 columns
+  vibration                :    10 columns
+  position_gap             :   111 columns
+  pressure                 :     7 columns
+  tracking                 :    90 columns
+  other_bool               :  6607 columns
+  other_numeric            :  1314 columns
+
+--- COBBLE/ALARM/FAULT COLUMNS (CRITICAL) ---
+  [1:0]STD01 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:1]STD01 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:2]STD02 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:3]STD02 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:4]STD03 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:5]STD03 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:6]STD04 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:7]STD04 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:8]STD05 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:9]STD05 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:10]STD06 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:11]STD06 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:12]STD07 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:13]STD07 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:14]STD08 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:15]STD08 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:16]STD09 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:17]STD09 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:18]STD10 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:19]STD10 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:20]STD11 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:21]STD11 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:22]STD12 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:23]STD12 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:24]STD13 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:25]STD13 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:26]STD14 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:27]STD14 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:28]STD15 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 482,536 (98.64%)
+    7903.0: 6,654 (1.36%)
+  [1:29]STD15 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:30]STD16 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:31]STD16 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:32]STD17 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:33]STD17 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:34]STD18 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:35]STD18 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:36]STD19 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:37]STD19 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:38]STD20 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:39]STD20 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:44]SH001 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:45]SH001 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:46]SH002 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:47]SH002 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:48]SH003 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:49]SH003 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:50]PR003 DRV LAST ALARM CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:51]PR003 DRV LAST FAULT CODE
+    dtype: float32
+    0.0: 489,190 (100.00%)
+  [1:143]STD01 B1 WARNING CUMULATIVE ALARM STATUS
+    dtype: float32
+    127.0: 489,190 (100.00%)
+  [1:144]STD02 B1 WARNING CUMULATIVE ALARM STATUS
+    dtype: float32
+    127.0: 489,190 (100.00%)
+
+--- TIME COLUMNS ---
+  [2_614]DB_UW10_AUX_DESCA_DESCALER_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+  [6_141]BC10_DB_CGRID_MANAG_ALARMS_FLD_PUSH_FW_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+  [6_142]BC10_DB_CGRID_MANAG_ALARMS_FLD_PUSH_BW_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+  [6_144]BC10_DB_CGRID_MANAG_ALARMS_FLD_LVR_LIFT_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+  [6_145]BC10_DB_CGRID_MANAG_ALARMS_FLD_LVR_LOW_TIMEOUT: dtype=bool
+    First: False
+    Last:  False
+
+--- SPEED COLUMNS (first 10) ---
+                                                  count         mean       std          min          25%          50%          75%          max
+[2:128]PLC01_HMI_STATUS_UW10_CALC_P1_FBKSpeed  489190.0     0.000000  0.000000     0.000000     0.000000     0.000000     0.000000     0.000000
+[2:132]PLC01_HMI_STATUS_UW10_CALC_P2_FBKSpeed  489190.0  1349.312256  0.122618  1349.307617  1349.307617  1349.307617  1349.307617  1354.312866
+[2:136]PLC01_HMI_STATUS_UW10_CALC_P3_FBKSpeed  489190.0  1349.311646  0.106955  1349.307617  1349.307617  1349.307617  1349.307617  1353.675781
+[5:221]BC10_CG_MANAGE_IDB_POS_SPEED            489190.0     1.040534  5.241392   -20.000000     0.000000     0.000000     0.000000    30.000000
+[5:223]BC10_CG_MANAGE_IDB_POS_SPEED            489190.0     1.040534  5.241392   -20.000000     0.000000     0.000000     0.000000    30.000000
+[5:226]BR10 - CR10 FAST SPEED REF SETPOINT     489190.0     0.000000  0.000000     0.000000     0.000000     0.000000     0.000000     0.000000
+
+--- FORCE/TORQUE COLUMNS (first 10) ---
+                                                       count         mean          std          min          25%          50%          75%           max
+[2:129]PLC01_HMI_STATUS_UW10_CALC_P1_FBKTorque      489190.0     0.000000     0.000000     0.000000     0.000000     0.000000     0.000000      0.000000
+[2:133]PLC01_HMI_STATUS_UW10_CALC_P2_FBKTorque      489190.0     3.555769     7.151507     1.666260     1.715088     1.727295     1.739502     32.202148
+[2:137]PLC01_HMI_STATUS_UW10_CALC_P3_FBKTorque      489190.0     3.787385     7.170042     1.873779     1.940918     1.953125     1.971436     32.507324
+[6:34]FERT_SEC1_DRV_IDB_DIN_TORQUE                  489190.0   166.575500   689.732544 -6924.000000     0.000000     0.000000     0.000000   3733.000000
+[6:40]S120_1A21PN002_IDB_FUR_CHRG_RT_DIN_TORQUE     489190.0  2291.830322   947.214355 -4117.000000  2469.000000  2587.000000  2684.000000   9788.000000
+[6:46]S120_1A21PN011_IDB_FUR_DHG_RT_DIN_TORQUE      489190.0  2222.433105   674.806396 -1612.000000  2192.000000  2277.000000  2358.000000  15115.000000
+[6:52]S120_1A21PN003_IDB_KICK_IN_ARM_01_DIN_TORQUE  489190.0   -29.183844   767.251404 -7913.000000     0.000000     0.000000     0.000000   8480.000000
+[6:58]S120_1A21PN004_IDB_KICK_IN_ARM_02_DIN_TORQUE  489190.0   100.160202  1194.910034 -7976.000000     0.000000     0.000000     0.000000  14304.000000
+[6:66]S120_1A21PN005_IDB_KICK_IN_ARM_03_DIN_TORQUE  489190.0   -19.660490   716.979980 -6658.000000     0.000000     0.000000     0.000000   9291.000000
+[6:72]S120_1A21PN006_IDB_KICK_IN_ARM_04_DIN_TORQUE  489190.0    24.410936   901.232849 -9017.000000     0.000000     0.000000     0.000000  12312.000000
+
+--- LOOPER COLUMNS (first 10) ---
+                                                                                       count unique    top    freq
+[13_300]RML+EL11-BSL_01_A Looper #1 (St 11-12) - Loop Position monitoring             489190      2  False  349005
+[13_302]RML+FL21-BSL_01_A Looper #2 (St 12-13) - Loop Position monitoring             489190      2  False  352070
+[13_303]RML+FL31-BSL_01_A Looper #3 (St 13-14) - Loop Position monitoring             489190      2  False  352039
+[13_304]RML+FL41-BSL_01_A Looper #4 (St 14-15) - Loop Position monitoring             489190      2  False  351954
+[13_305]RML+FL51-BSL_01_A Looper #5 (St 15-16) - Loop position monitoring             489190      2  False  316717
+[13_308]RML+FL61-BSL_01_A Looper #6 (St 16-17) - Loop position monitoring             489190      2  False  352243
+[13_309]RML+FL71-BSL_01_A Looper #7 (St 17-18) - Loop position monitoring             489190      2  False  352217
+[13_310]RML+FL81-BSL_01_A Looper #8 (St 18-19) - Loop position monitoring             489190      2  False  352196
+[13_311]RML+FL91-BSL_01_A Looper #9 (St 19-20) - Loop position monitoring             489190      2  False  352175
+[13_313]WRL+GL11-BSL_01_A Looper in front Finishing Block - Loop Position monitoring  489190      2  False  351967
+
+
+====================================================================================================
+CROSS-FILE SUMMARY
+====================================================================================================
+Total files: 9
+Total rows across all files: 4,505,330
+Total size: 3159.9 MB
+
+Per-file summary:
+  ELONGATION COBBLE 26112024.parquet                      |    300,000 rows | 10,646 cols |    214.6 MB
+  L1718_COBBLE_26112024.parquet                           |    407,610 rows | 10,646 cols |    248.9 MB
+  SH-02 CARRY FORWARD 24022025.parquet                    |    420,000 rows | 10,646 cols |    405.8 MB
+  SH-02 COBBLE 22022025.parquet                           |    337,320 rows | 10,646 cols |    226.7 MB
+  SH-03 COBBLE 11122024.parquet                           |  1,260,000 rows | 10,646 cols |    828.5 MB
+  SH-03 COBBLE 23112024.parquet                           |    420,000 rows | 10,646 cols |    226.0 MB
+  SH-03 DEV COBBLE 24022025.parquet                       |    333,600 rows | 10,646 cols |    280.3 MB
+  STD-15 REF CHANGE COBBLE 22012025.parquet               |    537,610 rows | 10,646 cols |    360.1 MB
+  STD14-15 COBBLE 29012025.parquet                        |    489,190 rows | 10,646 cols |    369.0 MB
+
+====================================================================================================
+ANALYSIS COMPLETE
+====================================================================================================
