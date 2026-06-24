@@ -6,7 +6,7 @@ Usage:
 
 Pipeline:
     Phase 1: Load -> Downsample (10ms->1s) -> Select features -> Engineer targets
-    Phase 2: Rolling features -> Inter-stand -> Looper -> MFE -> Save
+    Phase 2: Rolling features -> Inter-stand -> Looper -> Advanced (SPC/Eng/Dist) -> Save
 """
 
 import gc
@@ -31,7 +31,7 @@ from src.data.target_engineer import create_targets
 from src.features.rolling_features import compute_rolling_features
 from src.features.interstand_features import compute_interstand_features
 from src.features.looper_features import compute_looper_features
-from src.features.mfe_features import compute_mfe_features
+from src.features.advanced_features import compute_advanced_features
 
 
 def process_single_file(meta: dict) -> str:
@@ -83,9 +83,9 @@ def process_single_file(meta: dict) -> str:
     print("  Step 2.3: Looper stability features...")
     looper_df = compute_looper_features(df)
 
-    # 2.4 MFE features
-    print("  Step 2.4: MFE-inspired features...")
-    mfe_df = compute_mfe_features(df)
+    # 2.4 Advanced features (SPC + Physical Engineering + Distribution)
+    print("  Step 2.4: Advanced features (SPC, Power, Distribution)...")
+    adv_df = compute_advanced_features(df)
 
     # ── Combine ──
     print("\n  Combining all features...")
@@ -106,7 +106,7 @@ def process_single_file(meta: dict) -> str:
             seen.add(c)
 
     result = pd.concat(
-        [df[raw_keep_unique], rolling_df, interstand_df, looper_df, mfe_df],
+        [df[raw_keep_unique], rolling_df, interstand_df, looper_df, adv_df],
         axis=1
     )
 
@@ -118,15 +118,15 @@ def process_single_file(meta: dict) -> str:
     n_rolling = len(rolling_df.columns)
     n_inter = len(interstand_df.columns)
     n_looper = len(looper_df.columns)
-    n_mfe = len(mfe_df.columns)
-    n_total = n_raw + n_rolling + n_inter + n_looper + n_mfe
+    n_adv = len(adv_df.columns)
+    n_total = n_raw + n_rolling + n_inter + n_looper + n_adv
 
     print(f"\n  Feature count breakdown:")
     print(f"    Raw sensor features:      {n_raw:4d}")
     print(f"    Rolling window features:  {n_rolling:4d}")
     print(f"    Inter-stand features:     {n_inter:4d}")
     print(f"    Looper features:          {n_looper:4d}")
-    print(f"    MFE features:             {n_mfe:4d}")
+    print(f"    Advanced features:        {n_adv:4d}")
     print(f"    ----------------------------------")
     print(f"    TOTAL features:           {n_total:4d}")
     print(f"    + targets, metadata, timestamp")
@@ -141,7 +141,7 @@ def process_single_file(meta: dict) -> str:
     print(f"\n  [SAVED] {out_path} ({size_mb:.1f} MB, {elapsed:.1f}s)")
 
     # Clean up
-    del df, rolling_df, interstand_df, looper_df, mfe_df, result
+    del df, rolling_df, interstand_df, looper_df, adv_df, result
     gc.collect()
 
     return str(out_path)
@@ -186,7 +186,9 @@ def run_full_pipeline():
             'rate_of_change': [c for c in feature_cols if '_roc' in c],
             'inter_stand': [c for c in feature_cols if any(k in c for k in ['mismatch', 'ratio', 'spd_ref_dev', 'cascading'])],
             'looper': [c for c in feature_cols if c.startswith('lp_') or 'looper' in c],
-            'mfe': [c for c in feature_cols if c.startswith('mfe_')],
+            'spc': [c for c in feature_cols if c.startswith('spc_')],
+            'physical_eng': [c for c in feature_cols if c.startswith('pwr_')],
+            'distribution': [c for c in feature_cols if c.startswith('dist_')],
         }
         categorized = set()
         for v in categories.values():

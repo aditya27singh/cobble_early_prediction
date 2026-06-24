@@ -1,0 +1,86 @@
+{
+  "logistic_regression": {
+    "accuracy": 0.0198656149576395,
+    "precision": 0.005925925925925926,
+    "recall": 1.0,
+    "f1": 0.011782032400589101,
+    "auc_roc": 0.5935734809155321,
+    "auc_pr": 0.007195237725460818,
+    "true_positives": 60,
+    "false_positives": 10065,
+    "true_negatives": 144,
+    "false_negatives": 0,
+    "false_alarm_rate": 0.9858947987070232,
+    "threshold": 0.9400000000000002
+  },
+  "xgboost": {
+    "accuracy": 0.9313467718375694,
+    "precision": 0.02643171806167401,
+    "recall": 0.3,
+    "f1": 0.048582995951417005,
+    "auc_roc": 0.8067016031606099,
+    "auc_pr": 0.018317384582508322,
+    "true_positives": 18,
+    "false_positives": 663,
+    "true_negatives": 9546,
+    "false_negatives": 42,
+    "false_alarm_rate": 0.06494269761974727,
+    "threshold": 0.07
+  },
+  "lightgbm": {
+    "accuracy": 0.9442983737462265,
+    "precision": 0.022388059701492536,
+    "recall": 0.2,
+    "f1": 0.040268456375838924,
+    "auc_roc": 0.9026610507068925,
+    "auc_pr": 0.0307924814074537,
+    "true_positives": 12,
+    "false_positives": 524,
+    "true_negatives": 9685,
+    "false_negatives": 48,
+    "false_alarm_rate": 0.05132726026055441,
+    "threshold": 0.060000000000000005
+  },
+  "xgboost_tuned": {
+    "accuracy": 0.9591975849644562,
+    "precision": 0.06537530266343826,
+    "recall": 0.45,
+    "f1": 0.11416490486257928,
+    "auc_roc": 0.8779524602474941,
+    "auc_pr": 0.03951989175987192,
+    "true_positives": 27,
+    "false_positives": 386,
+    "true_negatives": 9823,
+    "false_negatives": 33,
+    "false_alarm_rate": 0.03780977568811833,
+    "threshold": 0.14
+  },
+  "best_params": {
+    "n_estimators": 186,
+    "max_depth": 9,
+    "learning_rate": 0.16961318962476285,
+    "subsample": 0.5947261917585801,
+    "colsample_bytree": 0.5734362593891431,
+    "min_child_weight": 13,
+    "gamma": 4.820990101954237,
+    "scale_pos_weight": 113.67247345737499
+  },
+  "lead_time": {
+    "mean_sec": 3035.0,
+    "min_sec": 3035.0,
+    "max_sec": 3035.0
+  },
+  "selected_features_count": 150,
+  "top_10_shap_features": {
+    "vib_1_roc2": 0.7857726216316223,
+    "9_69_CZ75_COA_M75_02_Vib_Sns_Val": 0.7706472277641296,
+    "vib_2_roc2": 0.657995343208313,
+    "vib_1_roc": 0.597878098487854,
+    "pwr_max_volatility": 0.5784042477607727,
+    "9_57_CZ75_COA_M75_01_Vib_Sns_Val": 0.5209378004074097,
+    "vib_2_roc": 0.4704023003578186,
+    "torq_n_03_rmin_30s": 0.4435703754425049,
+    "13_0_STD01_T_FBK_Torque_Norm": 0.43879732489585876,
+    "vib_2_rstd_10s": 0.43524256348609924
+  }
+}

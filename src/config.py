@@ -11,7 +11,7 @@ from pathlib import Path
 # PATHS
 # ============================================================
 PROJECT_ROOT = Path(__file__).resolve().parent.parent   # INTERN/
-DATA_DIR     = PROJECT_ROOT / "data"
+DATA_DIR     = PROJECT_ROOT / "raw_data"
 PROCESSED_DIR = PROJECT_ROOT / "processed"
 MODELS_DIR   = PROJECT_ROOT / "models"
 REPORTS_DIR  = PROJECT_ROOT / "reports"
@@ -215,7 +215,13 @@ EPS = 1e-6
 # ============================================================
 # TRAIN / VAL / TEST SPLIT (by file_id)
 # ============================================================
-# 6 train / 2 val / 1 test
-TRAIN_FILE_IDS = [0, 2, 3, 5, 6, 8]   # elongation, sh02_cf, sh02, sh03_nov, sh03_dev, std14_15
-VAL_FILE_IDS   = [1, 4]                # l1718, sh03_dec
-TEST_FILE_IDS  = [7]                   # std15_ref
+# Ensure each split has cobble + non-cobble files for balanced evaluation.
+# Train (5 files, 3 cobble + 2 non-cobble):
+#   elongation(0), l1718(1), sh02_cf(2-cobble), sh03_nov(5-cobble), sh03_dev(6-cobble)
+# Val (2 files, 1 cobble + 1 non-cobble):
+#   std15_ref(7), std14_15(8-cobble)
+# Test (2 files, 2 cobble):
+#   sh02(3-cobble), sh03_dec(4-cobble)
+TRAIN_FILE_IDS = [0, 1, 2, 5, 6]
+VAL_FILE_IDS   = [7, 8]
+TEST_FILE_IDS  = [3, 4]
